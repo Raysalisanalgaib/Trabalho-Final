@@ -1,0 +1,50 @@
+POST http://localhost:3333/livro
+Content-Type: application/json
+
+{
+  "titulo": "Duna",
+  "autor": "Frank Herbert",
+  "npaginas": 631,
+  "editora": "O Arqueiro"
+
+}
+
+###
+
+GET http://localhost:3333/livros
+
+###
+
+GET http://localhost:3333/livros?search=Harry
+
+###
+
+
+PUT http://localhost:3333/livros/896cca93-f8be-4c89-845c-b8dff4746102
+Content-Type: application/json
+
+{
+  "titulo": "Rei da Ira ",
+  "autor": "Ana Haung",
+  "npaginas": 336,
+  "editora": "Rocco"
+
+}
+
+###
+
+PATCH http://localhost:3333/livros/896cca93-f8be-4c89-845c-b8dff4746102
+Content-Type: application/json
+
+{
+  "titulo": "Rei da Inveja ",
+  "autor": "Ana Haung",
+  "npaginas": 336,
+  "editora": "Rocco"
+
+
+}
+
+###
+ 
+DELETE  http://localhost:3333/livros/896cca93-f8be-4c89-845c-b8dff4746102
